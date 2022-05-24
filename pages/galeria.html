@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVR Ceramica</title>
+    <link rel="shortcut icon" href="../img/logo-sinfondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+</head>
+
+<body class="grid__area-galeria">
+    <!-- HEADER DE LA PÁGINA -->
+    <header class="header-galeria">
+        <div class="logo">
+            <a href="../index.html"> <img src="../img/logo-sinfondo.png" alt="avrceramica" class="logo__image"> </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item--active" href="galeria.html">Galeria</a>
+                </li>
+                <li class="menu__item">
+                    <a href="sobremi.html">Sobre Mí</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN DE LA PÁGINA -->
+    <main class="main-galeria">
+        <div class="galeria">
+            <div>
+                <h1 class="galeria__titulo">Galeria</h1>
+            </div>
+            <div class="galeria__presentacion">
+                <h2 class="galeria__h2">Consultar disponibilidad por piezas de galeria</h2>
+            </div>
+        </div>
+    </main>
+    <!-- SECTION DE LA PÁGINA -->
+    <section class="section-galeria">
+        <article class="galeria__fotos">
+            <div class="galeria__fila-1">
+                <div class="efectos__img">
+                    <img src="../img/azucarera-mariposas.jpg" class="galeria__img" alt="azucarera con mariposas">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/provoletera.jpg" class="galeria__img" alt="provoletera lisa">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/mate-flores.jpg" class="galeria__img" alt="mate con flores">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/tazas-fores.jpg" class="galeria__img" alt="tazas con flores">
+                </div>
+            </div>
+            <div class="galeria__fila-2">
+                <div class="efectos__img">
+                    <img src="../img/bandeja-pajarito.jpg" class="galeria__img" alt="bandeja con pajarito">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/azucareras-flores.jpg" class="galeria__img" alt="azucareras con flores">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/saumerio.jpg" class="galeria__img" alt="porta saumerio">
+                </div>
+                <div class="efectos__img">
+                    <img src="../img/bandeja-corazón-pajarito.JPG" class="galeria__img"
+                        alt="bandeja corazón con pajarito">
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- FOOTER DE LA PÁGINA -->
+    <footer class="footer-galeria">
+        <div class="pie">
+            <div class="pie__info">
+                <p class="pie__texto">
+                    Mendiolaza, Córdoba, Argentina. <br> Tel:12345678. <br> @avrceramica
+                </p>
+            </div>
+            <div>
+                <div class="pie__logos">
+                    <img src="../img/instagram.png" class="pie__img-insta" alt="logo-instagram">
+                    <img src="../img/email.png" class="pie__img-mail" alt="logo-mail">
+                </div>
+            </div>
+            <div class="pie__mail">
+                <form action="index.js" method="post" class="pie__formulario">
+                    <label for="mail"> Recibí novedades en tu mail:</label> <br>
+                    <input type="email" name="mail" id="mail" class="barra-texto">
+                    <input type="submit" value="Enviar" class="button">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

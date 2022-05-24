@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVR Ceramica</title>
+    <link rel="shortcut icon" href="../img/logo-sinfondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+</head>
+
+<body class="grid__area-contacto">
+    <!-- HEADER DE LA PÁGINA -->
+    <header class="header-contacto">
+        <div class="logo">
+            <a href="../index.html"> <img src="../img/logo-sinfondo.png" alt="avrceramica" class="logo__image"> </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li class="menu__item">
+                    <a href="sobremi.html">Sobre Mí</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item--active" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN DE LA PÁGINA -->
+    <main class="main-contacto">
+        <div class="contacto">
+            <div class="contacto__informacion">
+                <h1 class="h1">Contacto</h1>
+                <p class="contacto__texto">
+                    <i>Si desea comunicarse con nosotros o realizar alguna consulta puede escribirnos llenando el
+                        formulario.</i>
+                </p> <br>
+                <i>
+                    <p>Muchas gracias.
+                </i> <b>AVR Cerámica.<b></p>
+            </div>
+            <div>
+                <form action="index.js" method="post" class="contacto__form">
+                    <div><label for="nombre">Nombre:</label></div>
+                    <input type="text" name="nombre" class="barra-texto">
+                    <div><label for="apellido">Apellido:</label></div>
+                    <input type="text" surname="apellido" class="barra-texto">
+                    <div><label for="consulta">Consulta</label></div>
+                    <input type="text" name="consulta" id="consulta" class="barra-texto">
+                    <div><label for="teléfono">Teléfono</label></div>
+                    <input type="tel" name="teléfono" id="teléfono" class="barra-texto">
+                    <div><label for="linea de productos">Linea de Productos</label><br>
+                        <select name="linea de productos" id="linea de productos" class="barra-texto">
+                            <option value="lisa">Lisa</option>
+                            <option value="flores">Flores</option>
+                            <option value="mariposas">Mariposas</option>
+                        </select></div><br>
+                    <div class="contacto__botones">
+                        <input type="submit" value="Enviar" class="button">
+                        <input type="reset" value="Limpiar" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- SECTION DE LA PÁGINA -->
+    <section class="section-contacto">
+        <div>
+            <img src="../img/img-pag-contacto-rec.jpg" class="img__contacto" alt="bandeja corazón pajarito">
+        </div>
+    </section>
+    <!-- FOOTER DE LA PÁGINA -->
+    <footer class="footer-contacto">
+        <div class="pie">
+            <div class="pie__info">
+                <p class="pie__texto">
+                    Mendiolaza, Córdoba, Argentina. <br> Tel:12345678. <br> @avrceramica
+                </p>
+            </div>
+            <div>
+                <div class="pie__logos">
+                    <img src="../img/instagram.png" class="pie__img-insta" alt="logo-instagram">
+                    <img src="../img/email.png" class="pie__img-mail" alt="logo-mail">
+                </div>
+            </div>
+            <div class="pie__mail">
+                <form action="index.js" method="post" class="pie__formulario">
+                    <label for="mail"> Recibí novedades en tu mail:</label> <br>
+                    <input type="email" name="mail" id="mail" class="barra-texto">
+                    <input type="submit" value="Enviar" class="button">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
