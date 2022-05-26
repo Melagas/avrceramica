@@ -8,6 +8,8 @@
     <title>AVR Ceramica</title>
     <link rel="shortcut icon" href="../img/logo-sinfondo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -44,16 +46,16 @@
     <main class="main-contacto">
         <div class="contacto">
             <div class="contacto__informacion">
-                <h1 class="h1">Contacto</h1>
-                <p class="contacto__texto">
+                <h1 class="animate__animated animate__backInLeft">Contacto</h1>
+                <p class="contacto__texto" data-aos="flip-up">
                     <i>Si desea comunicarse con nosotros o realizar alguna consulta puede escribirnos llenando el
                         formulario.</i>
                 </p> <br>
                 <i>
-                    <p>Muchas gracias.
+                    <p data-aos="flip-up">Muchas gracias.
                 </i> <b>AVR Cerámica.<b></p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <form action="index.js" method="post" class="contacto__form">
                     <div><label for="nombre">Nombre:</label></div>
                     <input type="text" name="nombre" class="barra-texto">
@@ -106,6 +108,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

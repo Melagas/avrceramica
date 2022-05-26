@@ -8,6 +8,8 @@
     <title>AVR Ceramica</title>
     <link rel="shortcut icon" href="img/logo-sinfondo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -44,8 +46,8 @@
     <main class="main-index">
         <article class="cuerpo">
             <div class="cuerpo__texto">
-                <h1 class="h1">Home</h1>
-                <p>
+                <h1 class="animate__animated animate__backInLeft">Home</h1>
+                <p data-aos="zoom-in">
                     <i><b>AVR Cerámica</b> es un espacio donde el arte y la imaginación se combinan para recrear
                         productos con
                         un grado de detalle y dedicación que acompañan y decoran el día a día. Uniendo elementos de
@@ -57,7 +59,7 @@
                     Hecho a mano y con amor.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-out">
                 <img src="img/foto-pagina-principal.jpg" class="cuerpo__img" alt="Frutera de cerámica con un picaflor">
             </div>
         </article>
@@ -87,6 +89,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

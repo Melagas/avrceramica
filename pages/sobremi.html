@@ -8,6 +8,8 @@
     <title>AVR Ceramica</title>
     <link rel="shortcut icon" href="../img/logo-sinfondo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -43,16 +45,16 @@
     <!-- MAIN DE LA PÁGINA -->
     <main class="main-sobremi">
         <article class="sobremi">
-            <picture class="sobremi__picture">
-                <img src="../img/duncan-sobremí.jpg" class="sobremi__img" alt="pinturas duncan">
+            <picture class="sobremi__picture" data-aos="zoom-out">
+                <img src="../img/duncan-sobremi.jpg" class="sobremi__img" alt="pinturas duncan">
             </picture>
             <div class="sobremi__texto">
                 <picture>
-                    <img src="../img/foto-presentación.jpg" class="sobremi__img-presentacion"
+                    <img src="../img/foto-presentacion.jpg" class="sobremi__img-presentacion"
                         alt="foto de presentacion">
                 </picture>
-                <h1><b>Sobre Mí</b></h1>
-                <p>
+                <h1 class="animate__animated animate__backInRight"><b>Sobre Mí</b></h1>
+                <p data-aos="fade-left">
                     <b>AVR Cerámica</b> <i>es un espacio que surgió cuando descurbí la pasión por pintar. Es un momento
                         donde puedo plasmar sobre esas piezas mi amor y dedicarme a embellecerlas. Apunto a piezas
                         originales, me gusta que cada producto sea único.
@@ -88,6 +90,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

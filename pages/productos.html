@@ -8,6 +8,8 @@
     <title>AVR Ceramica</title>
     <link rel="shortcut icon" href="../img/logo-sinfondo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -43,48 +45,48 @@
     <!-- MAIN DE LA PÁGINA -->
     <main class="main-productos">
         <div class="productos__titulo">
-            <h1>Productos</h1>
+            <h1 class="animate__animated animate__backInLeft">Productos</h1>
         </div>
         <article" class="flex__box">
             <section>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/mate-flores.jpg" class="productos__img" alt="mate">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/provoletera.jpg" class="productos__img" alt="provoletera">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/saumerio.jpg" class="productos__img" alt="saumerio">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
             </section>
             <section>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/azucarera-mariposas.jpg" class="productos__img" alt="azucarera mariposas">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/azucareras-flores.jpg" class="productos__img" alt="azucarera flores">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/tazas-fores.jpg" class="productos__img" alt="tazas">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
             </section>
             <section>
-                <div class="box">
-                    <img src="../img/bandeja-corazón-pajarito.JPG" class="productos__img"
+                <div class="box" data-aos="zoom-out">
+                    <img src="../img/bandeja-corazon-pajarito.JPG" class="productos__img"
                         alt="bandeja corazón pajarito">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/bandeja-pajarito.jpg" class="productos__img" alt="bandeja pajarito">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-out">
                     <img src="../img/foto-pagina-principal.jpg" class="productos__img" alt="ensaladera pajarito">
                     <input type="submit" value="Consultar" class="productos__boton">
                 </div>
@@ -123,6 +125,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
