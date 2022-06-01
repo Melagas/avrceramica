@@ -33,6 +33,16 @@ html {
     transition: all .5s ease-in-out;
 }
 
+.button:hover {
+    background-color: #4c4c47;
+    transition-duration: .4s;
+}
+
+.productos__boton:hover {
+    background-color: #4c4c47;
+    transition-duration: .4s;
+}
+
 /* ESTILOS */
 
 .button {
@@ -42,6 +52,7 @@ html {
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
+    font-weight: bold;
     font-size: 12px;
     margin: 3px;
     cursor: pointer;
@@ -91,15 +102,13 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin: 0em;
+    padding: 0em;
+    width: 100%;
 }
- 
+
 .menu__item {
-    justify-content: center;
     padding: .3rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
@@ -636,6 +645,7 @@ a {
         width: 30em;
         height: auto;
         border-radius: .5em;
+        margin: .5em
     }
 
     /* FOOTER */
