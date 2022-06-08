@@ -1,0 +1,31 @@
+.cuerpo__img:hover {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    filter: saturate(150%);
+}
+
+.menu__item--active {
+    color: var($alternative);
+}
+
+.menu__item :hover {
+    text-decoration: underline .3em var($alternative);
+    color: var($text-color);
+}
+
+.efectos__img:hover .galeria__img {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.button:hover {
+    background-color: var($boton-secondary);
+    transition-duration: .4s;
+}
+
+.productos__boton:hover {
+    background-color: var($boton-secondary);
+    transition-duration: .4s;
+}

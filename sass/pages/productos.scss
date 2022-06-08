@@ -1,0 +1,95 @@
+.productos {
+    background-color: var($base);
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: auto;
+        height: 18em;
+        border-radius: .5em;
+        margin: .5rem;
+    }
+
+    &__boton {
+        background-color: var($boton-primary);
+        color: var($secondary);
+        font-size: var($text-base);
+        font-family: var($font-principal);
+        border-radius: .5em;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    &__texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var($primary);
+        color: var($secondary);
+        font-family: var($font-principal);
+        font-size: var($text-medium);
+        font-weight: bold;
+        border-radius: .5em;
+        padding: 1rem;
+    }
+
+    .flex-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .box {
+            display: flex;
+            border-style: solid;
+            align-content: center;
+            align-items: center;
+            border-color: var($alternative);
+            background-color: var($secondary);
+            margin: .5rem;
+            border-radius: .5em;
+        }
+    }
+}
+
+.grid__area-productos {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+
+    .header-productos {
+        grid-area: header;
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .main-productos {
+        grid-area: main;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .section-productos {
+        grid-area: section;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .footer-productos {
+        grid-area: footer;
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+}

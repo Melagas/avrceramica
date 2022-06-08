@@ -1,0 +1,53 @@
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var($primary);
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: .5rem;
+    }
+
+    &__texto {
+        color: var($text-color);
+        font-family: var($font-principal);
+        font-size: var($text-base);
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img-insta {
+        width: 3em;
+        height: 3em;
+        margin: .5rem;
+    }
+
+    &__img-mail {
+        width: 3.8em;
+        height: 3.8em;
+        margin: .5rem;
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+    }
+
+    &__formulario {
+        color: var($text-color);
+        font-family: var($font-principal);
+        font-size: var($text-base);
+        font-style: normal;
+        font-weight: bold;
+    }
+}

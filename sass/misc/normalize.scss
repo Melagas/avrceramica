@@ -1,0 +1,46 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.button {
+    background-color: var($boton-primary);
+    font-size: var($text-base);
+    color: var($secondary);
+    border-radius: .5em;
+    padding: .5rem 1.5rem;
+    margin: .3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.barra-texto {
+    background-color: var($secondary);
+    font-family: var($font-principal);
+    border-radius: .5em;
+}
+
+h1 {
+    font-family: var($font-secondary);
+    font-weight: bold;
+    padding-bottom: 2rem;
+    margin: .5rem;
+    font-size: 30px;
+}
+
+.background {
+    background-color: var($base);
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var($text-color);
+}

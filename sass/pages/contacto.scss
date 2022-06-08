@@ -1,0 +1,83 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var($base);
+
+    &__informacion {
+        text-align: center;
+        font-weight: normal;
+        font-size: var($text-large);
+        font-family: var($font-principal);
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 2rem;
+    }
+
+    &__texto {
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    &__form {
+        color: var($secondary);
+        background-color: var($primary);
+        font-family: var($font-principal);
+        font-size: var($text-small);
+        border-radius: .5em;
+        padding-left: 1rem;
+        padding-right: 10rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 5rem;
+    }
+
+    &__botones {
+        display: flex;
+        font-weight: bold;
+        font-family: var($font-principal);
+    }
+
+    &__contacto {
+        height: 25em;
+        width: 100%;
+    }
+}
+
+
+.grid__area-contacto {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "section section section"
+        "footer footer footer";
+
+    header-contacto {
+        grid-area: header;
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    main-contacto {
+        grid-area: main;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    section-contacto {
+        grid-area: section;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    footer-contacto {
+        grid-area: footer;
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+
+}

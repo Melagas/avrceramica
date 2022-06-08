@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var($base);
+
+    &__image {
+        width: 25em;
+        cursor: pointer;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+
+    &__item {
+        padding: .3rem;
+        font-family: var($font-secondary);
+        font-size: var($text-medium);
+        list-style-type: none;
+        font-weight: bold;
+    }
+}
