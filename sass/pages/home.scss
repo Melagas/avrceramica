@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var($base);
+    background-color: $base;
 
     &__texto {
         text-align: center;
         font-weight: normal;
-        font-size: var($text-large);
-        font-family: var($font-principal);
+        font-size: $text-large;
+        font-family: $font-principal;
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -16,6 +16,55 @@
     &__img {
         width: 55em;
         height: auto;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .cuerpo {
+        display: flex;
+        flex-direction: column;
+
+        .h1 {
+            font-size: $text-medium;
+        }
+
+        &__texto {
+            font-size: $text-base;
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        &__img {
+            width: 30em;
+            height: auto;
+            border-radius: .5em;
+            margin: .5em
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:969px) {
+
+    /* INDEX MAIN */
+    .cuerpo {
+        display: flex;
+
+        .h1 {
+            font-size: $text-medium;
+        }
+
+        &__texto {
+            font-size: $text-base;
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        &__img {
+            width: 40em;
+            height: auto;
+            border-radius: .5em;
+            margin: .5rem;
+        }
     }
 }
 
@@ -27,22 +76,22 @@
         "header header"
         "main main"
         "footer footer";
+}
 
-    header-index {
-        grid-area: header;
-        grid-column: 1 / 3;
-        grid-row: 1;
-    }
+.header-index {
+    grid-area: header;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
 
-    main-index {
-        grid-area: main;
-        grid-column: 1 / 3;
-        grid-row: 2;
-    }
+.main-index {
+    grid-area: main;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
 
-    footer-index {
-        grid-area: footer;
-        grid-column: 1 / 3;
-        grid-row: 3;
-    }
+.footer-index {
+    grid-area: footer;
+    grid-column: 1 / 3;
+    grid-row: 3;
 }

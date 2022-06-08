@@ -5,12 +5,12 @@
 }
 
 .menu__item--active {
-    color: var($alternative);
+    color: $alternative;
 }
 
 .menu__item :hover {
-    text-decoration: underline .3em var($alternative);
-    color: var($text-color);
+    text-decoration: underline .3em $alternative;
+    color: $text-color;
 }
 
 .efectos__img:hover .galeria__img {
@@ -21,11 +21,11 @@
 }
 
 .button:hover {
-    background-color: var($boton-secondary);
+    background-color: $boton-secondary;
     transition-duration: .4s;
 }
 
 .productos__boton:hover {
-    background-color: var($boton-secondary);
+    background-color: $boton-secondary;
     transition-duration: .4s;
 }
