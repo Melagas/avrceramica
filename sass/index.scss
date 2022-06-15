@@ -5,19 +5,20 @@
 
 /*Misc*/
 
-@import './misc/variables.scss';
-@import './misc/normalize.scss';
-@import './misc/animations.scss';
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/normalize';
+@import './misc/animations';
 
 /*Partials*/
 
-@import './partials/header.scss';
-@import './partials/footer.scss';
+@import './partials/header';
+@import './partials/footer';
 
 
 /*Pages*/
-@import './pages/home.scss';
-@import './pages/productos.scss';
-@import './pages/galeria.scss';
-@import './pages/sobremi.scss';
-@import './pages/contacto.scss';
+@import './pages/home';
+@import './pages/productos';
+@import './pages/galeria';
+@import './pages/sobremi';
+@import './pages/contacto';

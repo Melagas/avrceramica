@@ -2,17 +2,14 @@
     background-color: $base;
 
     .productos__titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center, 0%);
     }
 
     .flex__box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+        @include flex(row, space-between, center, 0%);
+        
         .box {
+            display: flex;
             border-style: solid;
             align-content: center;
             align-items: center;
@@ -20,28 +17,29 @@
             background-color: $secondary;
             margin: .5rem;
             border-radius: .5em;
+
+            .productos__img {
+                width: auto;
+                height: 18em;
+                border-radius: .5em;
+                margin: .5rem;
+            }
+        
+            .productos__boton {
+                background-color: $boton-primary;
+                color: $secondary;
+                font-size: $text-base;
+                font-family: map-get($fonts, font-principal);
+                border-radius: .5em;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                margin: 1rem;
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: bold;
+                border: 2px solid transparent;
+            }
         }
-    }
-
-    .productos__img {
-        width: auto;
-        height: 18em;
-        border-radius: .5em;
-        margin: .5rem;
-    }
-
-    .productos__boton {
-        background-color: $boton-primary;
-        color: $secondary;
-        font-size: $text-base;
-        font-family: $font-principal;
-        border-radius: .5em;
-        padding-left: .5rem;
-        padding-right: .5rem;
-        margin: 1rem;
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: bold;
     }
 }
 
@@ -51,7 +49,7 @@
     align-items: center;
     background-color: $primary;
     color: $secondary;
-    font-family: $font-principal;
+    font-family: map-get($fonts, font-principal);
     font-size: $text-medium;
     font-weight: bold;
     border-radius: .5em;

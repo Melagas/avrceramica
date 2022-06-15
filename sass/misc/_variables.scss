@@ -8,10 +8,16 @@ $boton-primary: #0d0106;
 $boton-secondary: #4c4c47;
 
 /* Font-family */
-$font-principal: 'Open Sans',
-sans-serif;
-$font-secondary: 'Nunito',
-sans-serif;
+$fonts: (
+    font-principal: 'Open Sans',
+    font-secondary: 'Nunito',
+);
+
+@each $font, $value in $fonts {
+    #{$font} {
+        font: #{$value};
+    }
+}
 
 /* Font-sizes */
 $text-large: 2.4em;

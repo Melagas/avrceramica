@@ -20,19 +20,20 @@ html {
     font-weight: bold;
     cursor: pointer;
     border: 2px solid transparent;
+    
 }
 
 .barra-texto {
     background-color: $secondary;
-    font-family: $font-principal;
+    font-family: map-get($fonts, font-principal);
     border-radius: .5em;
     border: 2px solid transparent;
 }
 
 h1 {
-    font-family: $font-secondary;
+    font-family: map-get($fonts, font-secondary);
     font-weight: bold;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin: .5rem;
     font-size: 25px;
 }
@@ -45,4 +46,8 @@ h1 {
 a {
     text-decoration: none;
     color: $text-color;
+}
+
+p {
+    margin-bottom: 0rem;
 }
