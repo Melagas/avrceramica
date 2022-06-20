@@ -5,7 +5,8 @@
 
     &__titulo {
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     &__presentacion {
@@ -79,7 +80,7 @@
 
             &__titulo {
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
                 margin: .3rem;
                 padding: .3rem;
                 font-size: $text-medium;
@@ -114,7 +115,7 @@
         .galeria__img {
             justify-content: center;
             width: auto;
-            height: 17em;
+            height: 25em;
             border-radius: .5em;
             margin: 3rem;
         }
@@ -137,7 +138,6 @@
     }
 }
 
-
 @media screen and (min-width:769px) and (max-width:969px) {
 
     /* GALERIA */
@@ -153,7 +153,7 @@
 
             &__titulo {
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
                 margin: .5rem;
                 padding: .5rem;
                 font-size: $text-medium;

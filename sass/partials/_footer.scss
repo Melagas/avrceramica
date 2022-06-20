@@ -13,6 +13,7 @@
         color: $text-color;
         font-family: map-get($fonts, font-principal);
         font-size: $text-base;
+
         &--bolder {
             @extend .pie__texto;
             font-weight: bolder;
@@ -63,10 +64,8 @@
             font-size: $text-small;
         }
 
-        .pie__info {
-            &__texto {
-                font-size: $text-small;
-            }
+        &__texto {
+            font-size: $text-small;
         }
 
         &__img-insta {

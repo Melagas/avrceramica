@@ -6,38 +6,28 @@
     }
 
     .flex__box {
-        @include flex(row, space-between, center, 0%);
-        
+        display: flex;
+        justify-content: space-around;
+
+
         .box {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             border-style: solid;
             align-content: center;
             align-items: center;
             border-color: $alternative;
             background-color: $secondary;
-            margin: .5rem;
+            margin: 1rem;
+            padding: 1rem;
             border-radius: .5em;
 
             .productos__img {
                 width: auto;
-                height: 18em;
+                height: 20em;
                 border-radius: .5em;
                 margin: .5rem;
-            }
-        
-            .productos__boton {
-                background-color: $boton-primary;
-                color: $secondary;
-                font-size: $text-base;
-                font-family: map-get($fonts, font-principal);
-                border-radius: .5em;
-                padding-left: .5rem;
-                padding-right: .5rem;
-                margin: 1rem;
-                text-decoration: none;
-                cursor: pointer;
-                font-weight: bold;
-                border: 2px solid transparent;
             }
         }
     }
@@ -74,7 +64,6 @@
         .flex__box {
             display: flex;
             flex-direction: column;
-            align-items: stretch;
         }
 
         .box {
@@ -86,18 +75,10 @@
         }
 
         .productos__img {
-            height: 20em;
+            height: 15em;
             width: auto;
             border-radius: .5em;
             margin: .5rem;
-        }
-
-        .productos__boton {
-            border-radius: .5em;
-            padding-left: .5rem;
-            padding-right: .5rem;
-            font-size: $text-medium;
-            margin: 1rem;
         }
 
         .productos__texto {
@@ -110,7 +91,6 @@
         }
     }
 }
-
 
 @media screen and (min-width:769px) and (max-width:969px) {
 
@@ -130,30 +110,21 @@
         .flex__box {
             display: flex;
             flex-direction: column;
-            align-items: stretch;
         }
 
         .box {
             display: flex;
             flex-direction: column;
-            padding: 5rem;
+            padding: .5rem;
             margin: .5rem;
             border-radius: .5em;
         }
 
         .productos__img {
-            height: 40em;
+            height: 15em;
             width: auto;
             border-radius: .5em;
             margin: .5rem;
-        }
-
-        .productos__boton {
-            border-radius: .5em;
-            padding-left: .5rem;
-            padding-right: .5rem;
-            font-size: 1.5em;
-            margin: 1rem;
         }
 
         .productos__texto {

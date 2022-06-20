@@ -8,12 +8,12 @@ $boton-primary: #0d0106;
 $boton-secondary: #4c4c47;
 
 /* Font-family */
-$fonts: (
-    font-principal: 'Open Sans',
+$fonts: (font-principal: 'Open Sans',
     font-secondary: 'Nunito',
 );
 
-@each $font, $value in $fonts {
+@each $font,
+$value in $fonts {
     #{$font} {
         font: #{$value};
     }

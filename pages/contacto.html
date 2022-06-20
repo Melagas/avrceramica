@@ -68,17 +68,17 @@
                     <b>AVR Cerámica.<b>
                 </p>
             </div>
-            <div data-aos="zoom-in-up">
-                <form action=productos.html method="post" class="contacto__form">
-                    <div><label for="nombre">Nombre:</label></div>
+            <div data-aos="zoom-in-up" class="contacto__box">
+                <form action="index.js" method="post" class="contacto__form">
+                    <div class="contacto__datos"><label for="nombre">Nombre:</label></div>
                     <input type="text" name="nombre" class="barra-texto">
-                    <div><label for="apellido">Apellido:</label></div>
+                    <div class="contacto__datos"><label for="apellido">Apellido:</label></div>
                     <input type="text" surname="apellido" class="barra-texto">
-                    <div><label for="consulta">Consulta</label></div>
+                    <div class="contacto__datos"><label for="consulta">Consulta</label></div>
                     <input type="text" name="consulta" id="consulta" class="barra-texto">
-                    <div><label for="teléfono">Teléfono</label></div>
+                    <div class="contacto__datos"><label for="teléfono">Teléfono</label></div>
                     <input type="tel" name="teléfono" id="teléfono" class="barra-texto">
-                    <div><label for="linea de productos">Línea de Productos</label><br>
+                    <div class="contacto__datos"><label for="linea de productos">Línea de Productos</label><br>
                         <select name="linea de productos" id="linea de productos" class="barra-texto">
                             <option value="lisa">Lisa</option>
                             <option value="flores">Flores</option>
@@ -108,18 +108,22 @@
                 <p class="pie__texto--bolder">
                     Tel:12345678.
                 </p>
-                <p class="pie__texto--bolder">
-                    @avrceramica
-                </p>
+                <a href="https://www.instagram.com/avrceramica/" target="_blank">
+                    <p class="pie__texto--bolder">
+                        @avrceramica
+                    </p>
+                </a>
             </div>
             <div>
                 <div class="pie__logos">
-                    <img src="../img/instagram.png" class="pie__img-insta" alt="logo-instagram">
-                    <img src="../img/email.png" class="pie__img-mail" alt="logo-mail">
+                    <a href="https://www.instagram.com/avrceramica/" target="_blank"><img src="../img/instagram.png"
+                            class="pie__img-insta" alt="logo-instagram"></a>
+                    <a href="https://www.gmail.com/" target="_blank"><img src="../img/email.png" class="pie__img-mail"
+                            alt="logo-mail"></a>
                 </div>
             </div>
             <div class="pie__mail">
-                <form action=../index.html method="post" class="pie__formulario">
+                <form action="index.js" method="post" class="pie__formulario">
                     <label for="mail"> Recibí novedades en tu mail:</label> <br>
                     <input type="email" name="mail" id="mail" class="barra-texto">
                     <input type="submit" value="Enviar" class="button">
