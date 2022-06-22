@@ -10,8 +10,8 @@
     }
 
     &__presentacion {
-        padding-left: 30rem;
-        padding-right: 30rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     &__h2 {
@@ -24,7 +24,6 @@
         font-size: $text-medium;
         color: $secondary;
         border-radius: .5em;
-        margin: 1rem;
         padding: 1rem;
     }
 
@@ -87,8 +86,8 @@
             }
 
             &__presentacion {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
 
             &__h2 {
@@ -97,7 +96,6 @@
                 border-radius: .5em;
                 font-size: $text-base;
                 padding: .5rem;
-                margin: .5rem;
                 text-align: center;
             }
 
@@ -160,8 +158,8 @@
             }
 
             &__presentacion {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                margin-left: 15rem;
+                margin-right: 15rem;
             }
 
             &__h2 {
@@ -170,9 +168,6 @@
                 border-radius: .5em;
                 font-size: $text-base;
                 padding: .5rem;
-                margin: .5rem;
-                margin-left: 20rem;
-                margin-right: 20rem;
                 text-align: center;
             }
 

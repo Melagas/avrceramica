@@ -20,6 +20,18 @@
     transform: scale(1.2);
 }
 
+.overflow:hover .productos__img {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.overflow {
+    border-radius: .5em;
+    overflow: hidden;
+}
+
 .button:hover {
     background-color: $boton-secondary;
     transition-duration: .4s;
